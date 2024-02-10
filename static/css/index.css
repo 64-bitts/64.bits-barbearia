@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto'; 
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* <!-- topo --> */
+header {
+    background-color: #5e2f1e;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.8s ease, border-radius 0.8s ease; /* Adiciona uma transição suave */
+}
+    .header-scrolled {
+        background-color: #5e2f1ec0; /* Define a cor de fundo quando rolado para baixo */
+        border-bottom-right-radius: 30px;
+    }
+    .logoNavBar {
+        width: 3rem;
+        border-radius: 30rem;
+    }
+
+/* <!-- session de apresentação --> */
+    .logoPrincipal {
+        width: 10rem;
+        border-radius: 30rem;
+    }
+    #titulo {
+        font-size: 60px;
+        font-weight: 600;
+    }  
+    .link {
+        text-decoration: none;
+        color: gray;
+        
+    }
+
+/* <!-- arvore de link/conteudo --> */
+@media (min-width: 1025px) {
+    .tamanho {
+        width: 28%;
+    }
+}
+    .seletores {
+        border: none;
+        border-radius: 25px;
+        font-weight: 900;
+        background-color: black;
+        color: white
+    }
+    #socialSeletor {
+        width: 90px;
+        height: 35px;
+    }
+    #produtosSeletor {
+        width: 120px;
+        height: 35px;
+    }
+    /* Estilo para o botão ativo */
+    .seletor-ativo {
+        background-color: #5e2f1e;
+    }
+/* <!-- links/conteudo --> */
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        background-color: #422e2cc5;
+        opacity: 0.9;
+        color: white;
+        font-weight: 550;
+        border-radius: 10px;
+        text-decoration: none;
+        
+    }
+    .hoverLinks:hover {
+        background-color: #2e1e1c;
+        opacity: 1;
+    }
+/* <!-- botao whatsapp --> */
+    .whatsapp {
+        border: none;
+        background: none;
+        transition: transform 0.3s ease-in-out;
+    }
+    .whatsapp:hover {
+        transform: translate(0px, -8px);
+    }
+    .whatsapp_rodape {
+        border: none;
+        background: none;
+      
+    }
+/* <!-- final --> */
+    footer {
+        color: #fff;
+        /* Cor do texto do rodapé */
+        background-color: #5e2f1ec0;
+        border-top-left-radius: 30px;
+        height: 10vh;
+        /* Altura desejada para o rodapé em relação à altura da viewport */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Media query para dispositivos com largura de tela até 767 pixels (móveis) */
+    @media (min-width: 767px) {
+        footer {
+            background-color: #5e2f1ec0;
+            border-top-left-radius: 30px;
+            height: 8vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .whatsapp_size {
+        width: 22px;
+    }
+    
+    
