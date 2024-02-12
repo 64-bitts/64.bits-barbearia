@@ -127,5 +127,14 @@ header {
     .whatsapp_size {
         width: 22px;
     }
-    
-    
+    .seta-cima {
+        position:fixed;
+        display:none;
+        top:84%;
+        padding:8px 0px;
+        background-color:rgb(255, 255, 255);
+        right:50px;   
+        border-radius:10px;
+        filter:drop-shadow(5px 5px 10px #00000057);
+        transition:all .2s ease-in
+    }

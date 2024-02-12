@@ -25,7 +25,7 @@
         animation-name: transiçao;
         animation-duration: 0.8s;
         border-right: 10px solid transparent; /* Borda direita */
-        border-image: linear-gradient(#3b3c3f, #191c47, rgb(119, 37, 37)) 1; /* Gradiente de cor nos lados esquerdo e direito */
+        border-image: linear-gradient(#262626, #191c47, rgb(119, 37, 37)) 1; /* Gradiente de cor nos lados esquerdo e direito */
     }
 }
 /* <!-- links/conteudo --> */

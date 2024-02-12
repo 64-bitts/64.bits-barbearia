@@ -77,7 +77,12 @@
             </div>   
             <div id="conteudo" class="row p-2"></div>     
         </div>
-       
+
+        <a href="#" class="boxBackforTop">
+            <div class="seta-cima">
+                <img src="/static/assets/icons/seta-cima.svg" alt="">
+            </div>
+        </a>
     </main>
 
 <!-- final -->
@@ -94,6 +99,20 @@
 </body>
 
 <script>
+    /* Botão voltar ao topo */
+    let botao = document.querySelector(".seta-cima");
+            window.addEventListener("scroll", function () {
+            botao.style.display = "none";
+
+            if (window.scrollY < 500) {
+                botao.style.display = "none";
+            } else {
+                botao.style.display = "block";
+            }
+            });
+
+
+
     window.addEventListener('scroll', function() {
         var navbar = document.getElementById('navbar');
         if (window.scrollY > 0) {
